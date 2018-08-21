@@ -47,7 +47,7 @@ class Moments():
         # 密码
         password = self.wait.until(
             EC.presence_of_element_located((By.XPATH, '//*[@resource-id="com.tencent.mm:id/hz"][1]')))
-        password.set_text('sunjingtao1314')
+        password.set_text('密码')
         # 提交
         submit = self.wait.until(EC.element_to_be_clickable((By.ID, 'com.tencent.mm:id/alr')))
         submit.click()
